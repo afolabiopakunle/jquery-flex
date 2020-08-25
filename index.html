@@ -14,8 +14,10 @@
     <p class="summary">Welcome we are treating jQuery today</p>
     <button>Click To Hide</button>
     <script>
-        $('button').click(() => {
-            $(".summary").hide()
+        $(document).ready(function () {
+            $('button').click(function () {
+                $(this).hide()
+            })
         })
     </script>
 </body>
